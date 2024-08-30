@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E50E3C7F2C81D28500743CEF /* libhello_world_example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E59EF7172C808A47000E5930 /* libhello_world_example.a */; };
 		E59EF6EC2C8071E9000E5930 /* fframes_demoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59EF6EB2C8071E9000E5930 /* fframes_demoApp.swift */; };
 		E59EF6EE2C8071E9000E5930 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59EF6ED2C8071E9000E5930 /* ContentView.swift */; };
 		E59EF6F02C8071EA000E5930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59EF6EF2C8071EA000E5930 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 		E59EF6FE2C8071EA000E5930 /* fframes_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59EF6FD2C8071EA000E5930 /* fframes_demoTests.swift */; };
 		E59EF7082C8071EA000E5930 /* fframes_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59EF7072C8071EA000E5930 /* fframes_demoUITests.swift */; };
 		E59EF70A2C8071EA000E5930 /* fframes_demoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59EF7092C8071EA000E5930 /* fframes_demoUITestsLaunchTests.swift */; };
+		E59EF71A2C808BED000E5930 /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59EF7192C808BED000E5930 /* Demo.swift */; };
+		E59EF71D2C81BAD8000E5930 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E59EF71B2C808D34000E5930 /* libresolv.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,13 @@
 		E59EF7032C8071EA000E5930 /* fframes_demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fframes_demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E59EF7072C8071EA000E5930 /* fframes_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fframes_demoUITests.swift; sourceTree = "<group>"; };
 		E59EF7092C8071EA000E5930 /* fframes_demoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fframes_demoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E59EF7172C808A47000E5930 /* libhello_world_example.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libhello_world_example.a; path = "../fframes/target/aarch64-apple-ios/release/libhello_world_example.a"; sourceTree = "<group>"; };
+		E59EF7192C808BED000E5930 /* Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
+		E59EF71B2C808D34000E5930 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/usr/lib/libresolv.tbd; sourceTree = DEVELOPER_DIR; };
+		E59EF71F2C81C6C0000E5930 /* hello_world.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hello_world.h; path = "../fframes/examples/hello-world/src/hello_world.h"; sourceTree = "<group>"; };
+		E59EF7202C81C6F0000E5930 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		E59EF7212C81D075000E5930 /* libhello_world_example.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libhello_world_example.dylib; path = "../fframes/target/aarch64-apple-ios/debug/libhello_world_example.dylib"; sourceTree = "<group>"; };
+		E59EF7252C81D088000E5930 /* libhello_world_example.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libhello_world_example.a; path = "../fframes/target/aarch64-apple-ios/debug/libhello_world_example.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E50E3C7F2C81D28500743CEF /* libhello_world_example.a in Frameworks */,
+				E59EF71D2C81BAD8000E5930 /* libresolv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,10 +87,12 @@
 		E59EF6DF2C8071E9000E5930 = {
 			isa = PBXGroup;
 			children = (
+				E59EF71F2C81C6C0000E5930 /* hello_world.h */,
+				E59EF7202C81C6F0000E5930 /* BridgingHeader.h */,
 				E59EF6EA2C8071E9000E5930 /* fframes_demo */,
-				E59EF6FC2C8071EA000E5930 /* fframes_demoTests */,
 				E59EF7062C8071EA000E5930 /* fframes_demoUITests */,
 				E59EF6E92C8071E9000E5930 /* Products */,
+				E59EF7162C808A47000E5930 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +114,8 @@
 				E59EF6EF2C8071EA000E5930 /* Assets.xcassets */,
 				E59EF6F12C8071EA000E5930 /* fframes_demo.entitlements */,
 				E59EF6F22C8071EA000E5930 /* Preview Content */,
+				E59EF7192C808BED000E5930 /* Demo.swift */,
+				E59EF6FC2C8071EA000E5930 /* fframes_demoTests */,
 			);
 			path = fframes_demo;
 			sourceTree = "<group>";
@@ -127,6 +143,17 @@
 				E59EF7092C8071EA000E5930 /* fframes_demoUITestsLaunchTests.swift */,
 			);
 			path = fframes_demoUITests;
+			sourceTree = "<group>";
+		};
+		E59EF7162C808A47000E5930 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E59EF7252C81D088000E5930 /* libhello_world_example.a */,
+				E59EF7212C81D075000E5930 /* libhello_world_example.dylib */,
+				E59EF71B2C808D34000E5930 /* libresolv.tbd */,
+				E59EF7172C808A47000E5930 /* libhello_world_example.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +288,7 @@
 			files = (
 				E59EF6EE2C8071E9000E5930 /* ContentView.swift in Sources */,
 				E59EF6EC2C8071E9000E5930 /* fframes_demoApp.swift in Sources */,
+				E59EF71A2C808BED000E5930 /* Demo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +363,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=*]" = x86_64;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -353,6 +383,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SUPPORTED_PLATFORMS = driverkit;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -396,6 +427,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				EXCLUDED_ARCHS = x86_64;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -407,6 +439,8 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SUPPORTED_PLATFORMS = driverkit;
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
@@ -420,7 +454,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"fframes_demo/Preview Content\"";
+				DEVELOPMENT_TEAM = 7436XBTTTG;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = x86_64;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -435,15 +472,18 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "/Users/dmtrkovalenko/dev/fframes/target/aarch64-apple-ios/debug";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "goose.fframes-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/BridgingHeader.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -456,7 +496,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"fframes_demo/Preview Content\"";
+				DEVELOPMENT_TEAM = 7436XBTTTG;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = x86_64;
+				"EXCLUDED_ARCHS[sdk=*]" = x86_64;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -471,15 +514,18 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "/Users/dmtrkovalenko/dev/fframes/target/aarch64-apple-ios/debug";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "goose.fframes-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/BridgingHeader.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
