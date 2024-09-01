@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E50E3C7F2C81D28500743CEF /* libhello_world_example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E59EF7172C808A47000E5930 /* libhello_world_example.a */; };
+		E50E3C812C81D76700743CEF /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50E3C802C81D76700743CEF /* CoreMedia.framework */; };
+		E50E3C832C81D77A00743CEF /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50E3C822C81D77A00743CEF /* CoreFoundation.framework */; };
+		E50E3C852C81D78300743CEF /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50E3C842C81D78300743CEF /* CoreVideo.framework */; };
+		E50E3C872C81D78800743CEF /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50E3C862C81D78800743CEF /* VideoToolbox.framework */; };
+		E50E3C892C81D7A100743CEF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50E3C882C81D7A100743CEF /* Security.framework */; };
+		E50E3C8B2C81D8D500743CEF /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E50E3C8A2C81D8C700743CEF /* libbz2.tbd */; };
+		E50E3C8D2C81D8E900743CEF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E50E3C8C2C81D8E300743CEF /* libz.tbd */; };
+		E50E3C8F2C81D90200743CEF /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E50E3C8E2C81D8FB00743CEF /* libiconv.tbd */; };
 		E59EF6EC2C8071E9000E5930 /* fframes_demoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59EF6EB2C8071E9000E5930 /* fframes_demoApp.swift */; };
 		E59EF6EE2C8071E9000E5930 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59EF6ED2C8071E9000E5930 /* ContentView.swift */; };
 		E59EF6F02C8071EA000E5930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59EF6EF2C8071EA000E5930 /* Assets.xcassets */; };
@@ -17,6 +24,7 @@
 		E59EF70A2C8071EA000E5930 /* fframes_demoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59EF7092C8071EA000E5930 /* fframes_demoUITestsLaunchTests.swift */; };
 		E59EF71A2C808BED000E5930 /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59EF7192C808BED000E5930 /* Demo.swift */; };
 		E59EF71D2C81BAD8000E5930 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E59EF71B2C808D34000E5930 /* libresolv.tbd */; };
+		E5DFD4A62C83266000A973D2 /* libhello_world_example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5DFD4A52C83246400A973D2 /* libhello_world_example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E50E3C802C81D76700743CEF /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		E50E3C822C81D77A00743CEF /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		E50E3C842C81D78300743CEF /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
+		E50E3C862C81D78800743CEF /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/VideoToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		E50E3C882C81D7A100743CEF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		E50E3C8A2C81D8C700743CEF /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/usr/lib/libbz2.tbd; sourceTree = DEVELOPER_DIR; };
+		E50E3C8C2C81D8E300743CEF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		E50E3C8E2C81D8FB00743CEF /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
 		E59EF6E82C8071E9000E5930 /* fframes_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fframes_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E59EF6EB2C8071E9000E5930 /* fframes_demoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fframes_demoApp.swift; sourceTree = "<group>"; };
 		E59EF6ED2C8071E9000E5930 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,13 +64,11 @@
 		E59EF7032C8071EA000E5930 /* fframes_demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fframes_demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E59EF7072C8071EA000E5930 /* fframes_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fframes_demoUITests.swift; sourceTree = "<group>"; };
 		E59EF7092C8071EA000E5930 /* fframes_demoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fframes_demoUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E59EF7172C808A47000E5930 /* libhello_world_example.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libhello_world_example.a; path = "../fframes/target/aarch64-apple-ios/release/libhello_world_example.a"; sourceTree = "<group>"; };
 		E59EF7192C808BED000E5930 /* Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
 		E59EF71B2C808D34000E5930 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/usr/lib/libresolv.tbd; sourceTree = DEVELOPER_DIR; };
-		E59EF71F2C81C6C0000E5930 /* hello_world.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hello_world.h; path = "../fframes/examples/hello-world/src/hello_world.h"; sourceTree = "<group>"; };
 		E59EF7202C81C6F0000E5930 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
-		E59EF7212C81D075000E5930 /* libhello_world_example.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libhello_world_example.dylib; path = "../fframes/target/aarch64-apple-ios/debug/libhello_world_example.dylib"; sourceTree = "<group>"; };
-		E59EF7252C81D088000E5930 /* libhello_world_example.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libhello_world_example.a; path = "../fframes/target/aarch64-apple-ios/debug/libhello_world_example.a"; sourceTree = "<group>"; };
+		E5CA99772C84648700B5D7BA /* hello_world.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hello_world.h; sourceTree = "<group>"; };
+		E5DFD4A52C83246400A973D2 /* libhello_world_example.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libhello_world_example.a; path = "video/target/aarch64-apple-ios/release/libhello_world_example.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +76,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E50E3C7F2C81D28500743CEF /* libhello_world_example.a in Frameworks */,
+				E50E3C832C81D77A00743CEF /* CoreFoundation.framework in Frameworks */,
+				E50E3C812C81D76700743CEF /* CoreMedia.framework in Frameworks */,
+				E50E3C872C81D78800743CEF /* VideoToolbox.framework in Frameworks */,
+				E50E3C8F2C81D90200743CEF /* libiconv.tbd in Frameworks */,
+				E50E3C892C81D7A100743CEF /* Security.framework in Frameworks */,
 				E59EF71D2C81BAD8000E5930 /* libresolv.tbd in Frameworks */,
+				E5DFD4A62C83266000A973D2 /* libhello_world_example.a in Frameworks */,
+				E50E3C852C81D78300743CEF /* CoreVideo.framework in Frameworks */,
+				E50E3C8D2C81D8E900743CEF /* libz.tbd in Frameworks */,
+				E50E3C8B2C81D8D500743CEF /* libbz2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,8 +109,8 @@
 		E59EF6DF2C8071E9000E5930 = {
 			isa = PBXGroup;
 			children = (
-				E59EF71F2C81C6C0000E5930 /* hello_world.h */,
 				E59EF7202C81C6F0000E5930 /* BridgingHeader.h */,
+				E5CA99772C84648700B5D7BA /* hello_world.h */,
 				E59EF6EA2C8071E9000E5930 /* fframes_demo */,
 				E59EF7062C8071EA000E5930 /* fframes_demoUITests */,
 				E59EF6E92C8071E9000E5930 /* Products */,
@@ -148,10 +170,16 @@
 		E59EF7162C808A47000E5930 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E59EF7252C81D088000E5930 /* libhello_world_example.a */,
-				E59EF7212C81D075000E5930 /* libhello_world_example.dylib */,
+				E5DFD4A52C83246400A973D2 /* libhello_world_example.a */,
+				E50E3C8E2C81D8FB00743CEF /* libiconv.tbd */,
+				E50E3C8C2C81D8E300743CEF /* libz.tbd */,
+				E50E3C8A2C81D8C700743CEF /* libbz2.tbd */,
+				E50E3C882C81D7A100743CEF /* Security.framework */,
+				E50E3C862C81D78800743CEF /* VideoToolbox.framework */,
+				E50E3C842C81D78300743CEF /* CoreVideo.framework */,
+				E50E3C822C81D77A00743CEF /* CoreFoundation.framework */,
+				E50E3C802C81D76700743CEF /* CoreMedia.framework */,
 				E59EF71B2C808D34000E5930 /* libresolv.tbd */,
-				E59EF7172C808A47000E5930 /* libhello_world_example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -472,7 +500,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = "/Users/dmtrkovalenko/dev/fframes/target/aarch64-apple-ios/debug";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/video/target/aarch64-apple-ios/release";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "goose.fframes-demo";
@@ -514,7 +542,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = "/Users/dmtrkovalenko/dev/fframes/target/aarch64-apple-ios/debug";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/video/target/aarch64-apple-ios/release";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "goose.fframes-demo";

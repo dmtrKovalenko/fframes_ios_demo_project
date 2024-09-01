@@ -4,7 +4,6 @@
 //
 //  Created by Dmitriy Kovalenko on 29.08.24.
 //
-
 import XCTest
 
 final class fframes_demoTests: XCTestCase {
