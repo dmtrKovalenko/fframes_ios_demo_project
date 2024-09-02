@@ -25,6 +25,8 @@ extern "C" fn fframes_render(slug: *const c_char, to: *const c_char, tmp_dir: *c
             load_system_fonts: false,
             logger: fframes_logger::FFramesLoggerVariant::Compact,
             encoder_options: EncoderOptions {
+                // hardware accellerated h264 encoder comes with videotoolbox
+                preferred_video_codec: Some("h264_videotoolbox"),
                 tmp_files_directory: Some(&PathBuf::from(tmp_dir)),
                 ..Default::default()
             },

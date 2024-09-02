@@ -590,7 +590,9 @@ dependencies = [
 
 [[package]]
 name = "ffmpeg-sys-fframes"
-version = "7.0.2"
+version = "7.0.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "13d4fced9d3ce3cc566ed2a8f8929a896602a0c0653fd4ceb8fbd18d83236cc4"
 dependencies = [
  "bindgen",
  "cc",

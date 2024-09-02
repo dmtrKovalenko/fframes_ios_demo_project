@@ -14,6 +14,27 @@ fframaes = { path = "../fframes" }
 fframes_renderer = { path = "../../fframes-renderer" }
 ```
 
+Please make sure that for now you'll need to also change this in the fframe's root cargo toml
+
+```diff
+
+diff --git a/Cargo.toml b/Cargo.toml
+index bd64d76..3456f54 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -34,7 +34,7 @@ members = [
+ # usvgr = { path = "../svgr/crates/usvgr"}
+ svgr = "0.42.2"
+ usvgr = "0.42.2"
+-ffmpeg-sys-fframes = { version = "7.0.3", features = ["build", "static", "build-lib-x264", "build-lib-x265", "build-lib-opus", "build-license-gpl"] }
++ffmpeg-sys-fframes = { version = "7.0.3", features = ["build", "static"] }
+ 
+ # fframes internal deps 
+ fframes-media-loaders = { path = "fframes-media-loaders", version = "1.0.0-beta.1" }
+```
+
+
+
 Now you need to compile the rust library with statically linked ffmpeg libraries for ios and this all can be done with the following command
 
 ```bash
