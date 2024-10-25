@@ -7,7 +7,7 @@ struct ContentView: View {
     // Step 1: Define the function
     func renderVideo() {
         let fframes = Demo()
-        let videoPath = fframes.renderVideo(slug: "aosidjfoiasdjf demo")
+        let videoPath = fframes.renderVideo(slug: "The demo")
         videoURL = URL(fileURLWithPath: videoPath)
     }
     

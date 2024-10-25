@@ -18,7 +18,8 @@ impl Video for HelloWorldVideo<'_> {
     }
 
     fn audio(&self) -> AudioMap {
-        AudioMap::none()
+        use fframes::AudioTimestamp::*;
+        AudioMap::from([("music.mp3", Frame(0)..Eof)])
     }
 
     fn render_frame(&self, frame: Frame, _ctx: &FFramesContext) -> fframes::Svgr {

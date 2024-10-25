@@ -4,13 +4,16 @@ version = "1.0.0-beta.1"
 edition = "2021"
 
 [dependencies]
-fframes = { path = "../../fframes/fframes" }
+fframes = { version = "1.0.0-beta.4-rc.5" }
 clap = { version = "4.3.4", features = ["derive"] }
 # This is only needed for the wasm32 target for uuid
 getrandom = { version = "0.2.15", features = ["js"] }
 
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
-fframes_renderer = { path = "../../fframes/fframes-renderer" }
+fframes_renderer = { version = "1.0.0-beta.4-rc.5", fetaures = [
+  "videotoolbox",
+  "audiotoolbox",
+] }
 
 [features]
 default = ["renderer"]
@@ -23,6 +26,8 @@ crate-type = ["staticlib"]
 [target.aarch64-apple-ios]
 linker = "clang"
 rustflags = [
-  "-C", "link-arg=-isysroot", "-C", "link-arg=$(xcrun --sdk iphoneos --show-sdk-path)",
+  "-C",
+  "link-arg=-isysroot",
+  "-C",
+  "link-arg=$(xcrun --sdk iphoneos --show-sdk-path)",
 ]
-

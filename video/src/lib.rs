@@ -27,6 +27,7 @@ extern "C" fn fframes_render(slug: *const c_char, to: *const c_char, tmp_dir: *c
             encoder_options: EncoderOptions {
                 // hardware accellerated h264 encoder comes with videotoolbox
                 preferred_video_codec: Some("h264_videotoolbox"),
+                // preferred_audio_codec: Some("aac"),
                 tmp_files_directory: Some(&PathBuf::from(tmp_dir)),
                 ..Default::default()
             },
