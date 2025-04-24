@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,13 @@
 		E59EF71A2C808BED000E5930 /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59EF7192C808BED000E5930 /* Demo.swift */; };
 		E59EF71D2C81BAD8000E5930 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E59EF71B2C808D34000E5930 /* libresolv.tbd */; };
 		E5DFD4A62C83266000A973D2 /* libhello_world_example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5DFD4A52C83246400A973D2 /* libhello_world_example.a */; };
+		EE9A06F72DB78E3400E0C550 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9A06F62DB78E3400E0C550 /* libc++.tbd */; };
+		EE9A06F92DB79BCE00E0C550 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9A06F82DB79BCE00E0C550 /* Metal.framework */; };
+		EEAB238F2DB80EA4004185BA /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAB238E2DB80EA4004185BA /* MetalKit.framework */; };
+		EEAB23912DB80EB0004185BA /* libswiftMetal.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAB23902DB80EAB004185BA /* libswiftMetal.tbd */; };
+		EEAB23932DB80EB8004185BA /* MetalPerformanceShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAB23922DB80EB8004185BA /* MetalPerformanceShaders.framework */; };
+		EEAB23952DB80EBC004185BA /* MetalPerformanceShadersGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAB23942DB80EBC004185BA /* MetalPerformanceShadersGraph.framework */; };
+		EEAB25602DB946AF004185BA /* RustVideoRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB255F2DB946A9004185BA /* RustVideoRenderer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,22 +76,39 @@
 		E59EF7202C81C6F0000E5930 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		E5CA99772C84648700B5D7BA /* hello_world.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hello_world.h; sourceTree = "<group>"; };
 		E5DFD4A52C83246400A973D2 /* libhello_world_example.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libhello_world_example.a; path = "video/target/aarch64-apple-ios/release/libhello_world_example.a"; sourceTree = "<group>"; };
+		EE9A06F62DB78E3400E0C550 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.4.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		EE9A06F82DB79BCE00E0C550 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.4.sdk/System/Library/Frameworks/Metal.framework; sourceTree = DEVELOPER_DIR; };
+		EEAB238E2DB80EA4004185BA /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.4.sdk/System/Library/Frameworks/MetalKit.framework; sourceTree = DEVELOPER_DIR; };
+		EEAB23902DB80EAB004185BA /* libswiftMetal.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftMetal.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.4.sdk/usr/lib/swift/libswiftMetal.tbd; sourceTree = DEVELOPER_DIR; };
+		EEAB23922DB80EB8004185BA /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.4.sdk/System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = DEVELOPER_DIR; };
+		EEAB23942DB80EBC004185BA /* MetalPerformanceShadersGraph.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShadersGraph.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.4.sdk/System/Library/Frameworks/MetalPerformanceShadersGraph.framework; sourceTree = DEVELOPER_DIR; };
+		EEAB255F2DB946A9004185BA /* RustVideoRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustVideoRenderer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		EEAB25612DB94799004185BA /* components */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = components; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E59EF6E52C8071E9000E5930 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE9A06F72DB78E3400E0C550 /* libc++.tbd in Frameworks */,
 				E50E3C832C81D77A00743CEF /* CoreFoundation.framework in Frameworks */,
 				E50E3C812C81D76700743CEF /* CoreMedia.framework in Frameworks */,
+				EEAB23952DB80EBC004185BA /* MetalPerformanceShadersGraph.framework in Frameworks */,
 				E50E3C872C81D78800743CEF /* VideoToolbox.framework in Frameworks */,
 				E50E3C8F2C81D90200743CEF /* libiconv.tbd in Frameworks */,
 				E50E3C892C81D7A100743CEF /* Security.framework in Frameworks */,
 				E59EF71D2C81BAD8000E5930 /* libresolv.tbd in Frameworks */,
 				E5DFD4A62C83266000A973D2 /* libhello_world_example.a in Frameworks */,
+				EEAB23912DB80EB0004185BA /* libswiftMetal.tbd in Frameworks */,
 				E50E3C852C81D78300743CEF /* CoreVideo.framework in Frameworks */,
+				EEAB23932DB80EB8004185BA /* MetalPerformanceShaders.framework in Frameworks */,
+				EEAB238F2DB80EA4004185BA /* MetalKit.framework in Frameworks */,
 				E50E3C8D2C81D8E900743CEF /* libz.tbd in Frameworks */,
+				EE9A06F92DB79BCE00E0C550 /* Metal.framework in Frameworks */,
 				E50E3C8B2C81D8D500743CEF /* libbz2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,6 +155,8 @@
 		E59EF6EA2C8071E9000E5930 /* fframes_demo */ = {
 			isa = PBXGroup;
 			children = (
+				EEAB25612DB94799004185BA /* components */,
+				EEAB255F2DB946A9004185BA /* RustVideoRenderer.swift */,
 				E59EF6EB2C8071E9000E5930 /* fframes_demoApp.swift */,
 				E59EF6ED2C8071E9000E5930 /* ContentView.swift */,
 				E59EF6EF2C8071EA000E5930 /* Assets.xcassets */,
@@ -170,6 +196,12 @@
 		E59EF7162C808A47000E5930 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EEAB23942DB80EBC004185BA /* MetalPerformanceShadersGraph.framework */,
+				EEAB23922DB80EB8004185BA /* MetalPerformanceShaders.framework */,
+				EEAB23902DB80EAB004185BA /* libswiftMetal.tbd */,
+				EEAB238E2DB80EA4004185BA /* MetalKit.framework */,
+				EE9A06F82DB79BCE00E0C550 /* Metal.framework */,
+				EE9A06F62DB78E3400E0C550 /* libc++.tbd */,
 				E5DFD4A52C83246400A973D2 /* libhello_world_example.a */,
 				E50E3C8E2C81D8FB00743CEF /* libiconv.tbd */,
 				E50E3C8C2C81D8E300743CEF /* libz.tbd */,
@@ -198,6 +230,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EEAB25612DB94799004185BA /* components */,
 			);
 			name = fframes_demo;
 			productName = fframes_demo;
@@ -316,6 +351,7 @@
 			files = (
 				E59EF6EE2C8071E9000E5930 /* ContentView.swift in Sources */,
 				E59EF6EC2C8071E9000E5930 /* fframes_demoApp.swift in Sources */,
+				EEAB25602DB946AF004185BA /* RustVideoRenderer.swift in Sources */,
 				E59EF71A2C808BED000E5930 /* Demo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,6 +515,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = fframes_demo/fframes_demo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"fframes_demo/Preview Content\"";
@@ -497,14 +534,15 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/video/target/aarch64-apple-ios/release";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/video/target/aarch64-apple-ios/debug";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "goose.fframes-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -521,6 +559,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = fframes_demo/fframes_demo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"fframes_demo/Preview Content\"";
@@ -539,14 +578,15 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/video/target/aarch64-apple-ios/release";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/video/target/aarch64-apple-ios/debug";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "goose.fframes-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

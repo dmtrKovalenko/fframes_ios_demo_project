@@ -12,4 +12,8 @@ fn main() {
     println!("cargo:rustc-link-lib=framework=VideoToolbox");
 
     println!("cargo:rustc-link-lib=framework=Security");
+
+    println!("cargo:rustc-link-lib=framework=Metal");
+
+    println!("cargo:rustc-link-lib=c++");
 }
