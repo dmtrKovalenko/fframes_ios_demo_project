@@ -1,12 +1,8 @@
 # Build fframes for ios
 
-This example shows how to cross compile fframes for ios platform and link it with xcode project.
+This example shows how to cross compile fframes for ios platform and link it with xcode project. Including the real metal-powered GPU rendering backend and real-time rendering to the metal drawable canvas.
 
-**IMPORTANT: Most of the swift code was AI generated, it is working but please be extra cautios by integrating this to your app**
-
-> it is still in beta so access is limited to the beta testers only. Apply for beta test https://fframes.studio/
-
-Clone this repository, install the rust toolchain for cross compiling to IOS and build the rust library for dedicated target.
+To run this example: clone this repository, install the rust toolchain for cross compiling to IOS and build the rust library for dedicated target.
 
 ```bash
 rustup target add aarch64-apple-ios
