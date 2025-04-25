@@ -4,8 +4,8 @@ version = "1.0.0-beta.1"
 edition = "2021"
 
 [dependencies]
-fframes = { path = "../../fframes/fframes", features = ["videotoolbox"] }
-fframes_skia_renderer = { path = "../../fframes/fframes-skia-renderer", features = [
+fframes = { version = "=1.0.0-beta.7.rc-22", features = ["videotoolbox"] }
+fframes_skia_renderer = { version = "=1.0.0-beta.7.rc-22", features = [
 	"metal",
 ] }
 
