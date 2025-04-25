@@ -33,7 +33,7 @@ extern "C" fn fframes_render(slug: *const c_char, to: *const c_char, tmp_dir: *c
         fframes_skia_renderer::SkiaFFramesRenderer::new_metal(
             &metal_ctx,
             SkiaPipelineConfig {
-                buffer_queue_size: 1,
+                buffer_queue_size: 10,
                 encoder_threads: 1,
                 concurrency_policy:
                     fframes_skia_renderer::SkiaPipelineConcurrencyPolicy::MaxPerformance,
